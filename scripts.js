@@ -1,4 +1,7 @@
-       fetch(`https://pokeapi.co/api/v2/pokemon/charmander`)
+      
+      let pokemonid = 25; // Exemplo: Charmander
+
+      fetch(`https://pokeapi.co/api/v2/pokemon/${pokemonid}`)
             .then(resposta => resposta.json())
             .then(dados => {
                 document.getElementById ("pokemon-nome").textContent = dados.name;
